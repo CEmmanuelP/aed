@@ -24,6 +24,8 @@ public class Aed {
 
     private String managertel;
 
+    private String org;
+
     private String buildaddress;
 
     // 설치기관 전화번호

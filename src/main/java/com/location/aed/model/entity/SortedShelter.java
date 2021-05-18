@@ -9,15 +9,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class SortedAed implements Comparable<SortedAed> {
+public class SortedShelter implements Comparable<SortedShelter>{
     private double distance;
 
-    private Aed aed;
+    private Shelter shelter;
 
     @Override
-    public int compareTo(SortedAed sortedAed) {
+    public int compareTo(SortedShelter sortedShelter) {
         int a = Integer.parseInt(String.valueOf(Math.round(this.distance * 100)));
-        int b = Integer.parseInt(String.valueOf(Math.round(sortedAed.distance * 100)));
+        int b = Integer.parseInt(String.valueOf(Math.round(sortedShelter.distance * 100)));
         System.out.println(a);
         System.out.println(b);
         return Integer.compare(a, b);
